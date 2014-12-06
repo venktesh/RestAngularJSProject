@@ -1,0 +1,4 @@
+INDEX VERSION 1.121+C:\Users\admin\Code to be moved\.metadata\.plugins\org.eclipse.wst.jsdt.core
+816957059.index
+3855780472.index
+3550322389.index

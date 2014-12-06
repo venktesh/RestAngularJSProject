@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE window [
+<!ENTITY % firebugDTD SYSTEM "chrome://firebug/locale/firebug.dtd">
+%firebugDTD;
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd" >
+%browserDTD;
+]>
+
+<?xml-stylesheet href="chrome://fireclipse/skin/fireclipse.css"?>
+
+<overlay
+xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+xmlns:html="http://www.w3.org/1999/xhtml" >
+
+    <script type="application/javascript" src="chrome://fireclipse/content/fireclipse.js"></script>
+    <script type="application/javascript" src="chrome://fireclipse/content/observer.js"></script>
+  
+     <statusbar id="status-bar">
+        <statusbarpanel id="fireclipseStatusBar" context="fireclipseStatusContextMenu">
+        	<progressmeter id="fireclipseQuitter" mode="determined" value="0" collapsed="true"/>
+            <image id="fireclipseSyncIcon" tooltiptext="Link Firebug to Eclipse Editor" onmousedown="Firebug.Fireclipse.onClickSyncIcon(event);"/>
+            <image id="fireclipseStatusIcon" tooltiptext="Not connected to Eclipse" onmousedown="Firebug.Fireclipse.onClickStatusIcon(event);"/>
+            <label id="fireclipseStatusText" onmousedown="Firebug.Fireclipse.onClickStatusText(FirebugContext, event);"/> 
+        </statusbarpanel>
+    </statusbar>
+ 
+</overlay> 

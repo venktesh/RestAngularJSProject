@@ -1,0 +1,7 @@
+#Sat Dec 06 15:55:44 IST 2014
+remoteHelpPath=/infocenter/radhelp/v7r5,/help
+eclipse.preferences.version=1
+remoteHelpPort=80,63650
+remoteHelpName=RAD Infocenter,Local
+remoteHelpICEnabled=true,false
+remoteHelpHost=publib.boulder.ibm.com,127.0.0.1

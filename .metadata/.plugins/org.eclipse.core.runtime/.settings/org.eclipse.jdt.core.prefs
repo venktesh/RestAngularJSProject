@@ -1,0 +1,13 @@
+#Sat Dec 06 15:57:22 IST 2014
+org.eclipse.jdt.core.compiler.compliance=1.6
+org.eclipse.jdt.core.classpathVariable.WAS_V61_IMPL_FACTORY_PROP=E\:/IBM/IMShared/plugins/com.ibm.websphere.v61_6.1.200.v20080707_1609/implfactory.jar
+org.eclipse.jdt.core.classpathVariable.WAS_V6_IMPL_FACTORY_PROP=E\:/IBM/IMShared/plugins/com.ibm.websphere.v6_6.0.200.v20080707_1609/implfactory.jar
+org.eclipse.jdt.core.classpathVariable.WAS_V7_IMPL_FACTORY_PROP=E\:/IBM/IMShared/plugins/com.ibm.websphere.v7_7.0.0.v20080829/implfactory.jar
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.builder.resourceCopyExclusionFilter=*.launch
+eclipse.preferences.version=1
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.source=1.6
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error

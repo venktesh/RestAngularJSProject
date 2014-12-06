@@ -1,0 +1,86 @@
+<html>
+<head>
+<script type="application/javascript" src="fireclipse.js"></script>
+<script type="application/javascript" src="js/prototype.js"></script>
+<script type="application/javascript" src="js/extend.js"></script>
+<script type="application/javascript" src="uriMapUI.js"></script>
+<script>
+window.addEventListener("load", uriMapUI.onLoad, false);
+</script>
+<title>Fireclipse User Help</title> 
+
+<link type="text/css" rel="stylesheet" href="skin/fireclipse.css">
+
+<style>
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+td, th {
+ border: solid 1px black;
+ padding: 1ex 1em 1ex 1em;
+}
+table caption {
+  caption-side: bottom;
+  text-align: left
+  }
+
+.map-match { background-color: lime; }
+.map-mismatch { background-color: red; }
+.map-mismatch { background-color: yellow; }
+
+.fireclipse-help {
+	display: inline;
+}
+
+#fireclipse-tools {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<img src="skin/fireclipse.png" alt="Fireclipse">
+</div>
+
+<h2><a name="mappings">Name Mappings</a></h2>
+
+<button id='fireclipse-edit-map'>Edit Mapping Functions</button><button id='name-mapping-help' class='fireclipse-help'>help</button>
+ <div id="fireclipse-name-mapping">
+    Web browser errors are reported in the Javascipt console by URL. 
+    A developer needs to fix the error in a file. Therefore every URL needs to be mapped to a file name.
+    Javascript functions in the <code>uri_map.js</code> file perform this mapping. First match wins. In this 
+    early version of fireclipse, the developer needs to write and update these functions.  
+    Click "Edit Mapping Functions" to begin.  
+ </div>
+
+<button id="fireclipse_reload_uri_map">Reload URI to Filename map</button><button class='fireclipse-help'>help</button>
+  <div>
+    The URI to Filename mapping functions are read when this page is loaded.  To reload them when you make changes to the mapping, select the
+    <code>Reload URI to Filename map</code> button.
+  </div>
+
+<div id="fireclipse_uri_map_status">No map file content loaded</div>
+<div id="fireclipse_uri_test_results">No test results</div>
+
+<ul>
+  <li><a href="http://localhost:63636/FireclipsePlugin/doc/index.htm"  ><button>Installation and Development Notes</button></a> 
+  <li><a href="http://localhost:63636/FireclipsePlugin/"  ><button>Explore Fireclipse Plugin</button></a>
+  <li><a href="http://localhost:63636/.metadata/.plugins/"  ><button>Explore Eclipse Plugin Storage</button></a>
+  <li><a href="http://localhost:63636/EclipseVariables/"  ><button>Explore Eclipse Variables</button></a>
+  <li><a href="http://localhost:63636/EclipseWorkspace/"  ><button>Explore Eclipse Workspace</button></a>
+  <li><a href="http://localhost:63636/.metadata/.plugins/com.ibm.research.Fireclipse.FireclipsePlugin/test/"  ><button>Fireclipse Tests</button></a>  
+</ul>
+
+<div id="fireclipse-tools">
+  <button onclick="return Fireclipse.UI.restartServer();">(re)Start Server</button>
+  <div id="server">(no server status)</div>
+</div>
+
+<hr>
+<div id="fireclipse-version"></div>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.etools.webtools.debug.launch.configurationType">
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_TOOL_ARGUMENTS" value="-profile &quot;C:\Users\admin\Code to be moved\.metadata\.plugins\com.ibm.etools.webtools.debug\Firefox\Profiles\webtools&quot; -no-remote  -eclipseURL &quot;http://sahil.igl.co.in:63636/&quot; "/>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_WORKING_DIRECTORY" value="${workspace_loc}"/>
+</launchConfiguration>

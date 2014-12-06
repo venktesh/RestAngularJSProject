@@ -1,0 +1,39 @@
+body {
+ margin: 1ex;
+ background-color: white;
+ 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+}
+#header {
+	background-repeat: repeat-x;
+	background-image: url("fireclipse-background.png");
+	padding: 0ex 0ex 0ex 5ex;
+}
+
+#fireclipseStatusIcon[connected="true"]{
+    list-style-image: url(chrome://fireclipse/skin/fireclipse_16_16.GIF);
+}
+
+#fireclipseStatusIcon {
+    list-style-image: url(chrome://fireclipse/skin/fireclipse_gray_16_16.GIF);
+}
+
+#fireclipseSyncIcon{
+    list-style-image: url(chrome://fireclipse/skin/disabled_synced.gif);
+}
+
+#fireclipseSyncIcon[sync="true"]{
+    list-style-image: url(chrome://fireclipse/skin/enabled_synced.gif);
+}
+#fireclipseStatusBar[errors] #fbStatusIcon {
+    list-style-image: url(chrome://firebug/skin/errorIcon-sm.png);
+}
+
+#fireclipseStatusBar[disabled="true"] #fbStatusIcon {
+    list-style-image: url(chrome://firebug/skin/disabledIcon.png);
+}

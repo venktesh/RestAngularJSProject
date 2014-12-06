@@ -1,0 +1,316 @@
+!SESSION 2014-12-06 15:55:35.664 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=J2RE 1.6.0 IBM J9 2.4 Windows Vista x86-32 jvmwi3260-20080816_22093 (JIT enabled, AOT enabled)
+J9VM - 20080816_022093_lHdSMr
+JIT  - r9_20080721_1330ifx2
+GC   - 20080724_AA
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ibm.rational.rad.product.v75.ide
+Command-line arguments:  -data C:\Users\admin\Code to be moved -os win32 -ws win32 -arch x86 -product com.ibm.rational.rad.product.v75.ide
+
+!ENTRY org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+SHIFT+P:
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.NextPane,Switch to Next Pane,
+		Switch to Next Pane,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.ModeChangeNextPaneAction@6ec26ec2)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+SHIFT+P,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.goto.matching.bracket,Matching Bracket,
+		Go to Matching Bracket,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.wst.sse.ui.StructuredTextEditor$GotoMatchingBracketHandler@7c9b7c9b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+I:
+Binding(CTRL+I,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.FormatI,Italic,
+		Set to italic,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@55a955a9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+I,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.format.active.elements,Format Active Elements,
+		Format active elements,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.TextOperationAction@74d674d6)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableSelectColumn,Select Table Column,
+		Select table column,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@657b657b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.toggle.comment,Toggle Comment,
+		Toggle Comment,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_DOWN:
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableJoinCellWithBelow,Join Table Cell with Below,
+		Join table cell with below,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@69236923)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+SHIFT+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.last,Restore Last Selection,
+		Restore last selection,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_LEFT:
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableJoinCellOnLeft,Join Table Cell on Left,
+		Join table cell on left,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@6ad96ad9)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+SHIFT+ARROW_LEFT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.previous,Select Previous Element,
+		Expand selection to include previous sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_RIGHT:
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableJoinCellOnRight,Join Table Cell on Right,
+		Join table cell on right,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@6af16af1)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+SHIFT+ARROW_RIGHT,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.next,Select Next Element,
+		Expand selection to include next sibling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+SHIFT+ARROW_UP:
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableJoinCellWithAbove,Join Table Cell with Above,
+		Join table cell with above,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@690b690b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+SHIFT+ARROW_UP,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.structure.select.enclosing,Select Enclosing Element,
+		Expand selection to include enclosing element,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+SHIFT+X:
+Binding(CTRL+SHIFT+X,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.LayoutSelectCell,Select Text Cell,
+		Select text cell,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.EditFreelayAction@6d856d85)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+SHIFT+X,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.upperCase,To Upper Case,
+		Changes the selection to upper case,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.CaseAction@491b491b)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+CTRL+J:
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableJoinSelectedCells,Join Selected Table Cells,
+		Join selected table cells,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@6cb06cb0)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+CTRL+J,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.join.lines,Join Lines,
+		Join lines of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.JoinLinesAction@2aee2aee)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for ALT+CTRL+ARROW_DOWN:
+Binding(ALT+CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableSplitCellIntoRows,Split Table Cell into Rows,
+		Split table cell into rows,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@65936593)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(ALT+CTRL+ARROW_DOWN,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.copyLineDown,Copy Lines,
+		Duplicates the selected lines and moves the selection to the copy,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.MoveLinesAction@46034603)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+L:
+Binding(CTRL+L,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.AlignLeft,Align Left,
+		Set horizontal alignment to left,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@591e591e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+L,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.goto.line,Go to Line,
+		Go to a specified line of text,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.GotoLineAction@3fc53fc5)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+D:
+Binding(CTRL+D,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.RemoveTag,Remove Tag,
+		Remove tag in focus,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@58585858)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+D,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.delete.line,Delete Line,
+		Delete a line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.DeleteLineAction@248e248e)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+SHIFT+Q:
+Binding(CTRL+SHIFT+Q,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableAddRowAbove,Add Table Row Above,
+		Add table row above,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@61be61be)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+SHIFT+Q,
+	ParameterizedCommand(Command(org.eclipse.quickdiff.toggle,Quick Diff Toggle,
+		Toggles quick diff information display on the line number ruler,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.ui.texteditor.AbstractDecoratedTextEditor$5@5a115a11)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for CTRL+SHIFT+A:
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.TableAddColumnLeft,Add Table Column to Left,
+		Add table column to left,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.DesignPageAction@638c638c)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.pde.ui.openPluginArtifact,Open Plug-in Artifact,
+		Open a plug-in artifact in the manifest editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.pde.internal.ui.search.dialogs.PluginArtifactSearchHandler,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+A,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.search.find.occurrences,Occurrences in File,
+		Find occurrences of the selection in the file,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for SHIFT+F7:
+Binding(SHIFT+F7,
+	ParameterizedCommand(Command(com.ibm.etools.spellcheck,Spell Check,
+		Check spelling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.SedSpellCheckAction@762f762f)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(SHIFT+F7,
+	ParameterizedCommand(Command(com.ibm.etools.spellcheck,Spell Check,
+		Check spelling,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.SedSpellCheckAction@762f762f)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2014-12-06 15:57:49.244
+!MESSAGE A conflict occurred for F3:
+Binding(F3,
+	ParameterizedCommand(Command(com.ibm.etools.webedit.editor.actions.OpenSelection,Open Selection,
+		Open an editor on the selected link,
+		Category(com.ibm.etools.webedit.editor.category,Page Designer,%category.PageDesigner.description,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.ibm.etools.webedit.editor.actions.design.OpenOnSelectionAction@10fb10fb)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ibm.etools.webedit.editor.designPageScope,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.open.editor,Open Declaration,
+		Open an editor on the selected element,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(F3,
+	ParameterizedCommand(Command(org.eclipse.wst.sse.ui.open.file.from.source,Open Selection,
+		Open an editor on the selected link,
+		Category(org.eclipse.ui.category.edit,Edit,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=org.eclipse.wst.sse.ui.internal.hyperlink.OpenHyperlinkAction@78e478e4)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)

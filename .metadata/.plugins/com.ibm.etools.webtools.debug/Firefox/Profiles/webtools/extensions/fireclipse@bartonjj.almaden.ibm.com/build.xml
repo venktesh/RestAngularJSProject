@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+
+<project name="Fireclipse Firefox Extension" default="create-fireclipse-xpi">
+
+    <!-- example local.properties
+install.dir=C:/Documents and Settings/bartonjj/Application Data/Mozilla/Firefox/Profiles/webtools
+dist_dir=../webtools.debug
+    -->
+       <property file="local.properties"/>
+
+    <!-- eg branch.properties
+RELEASE=.0a8
+VERSION=0.2
+        -->
+    <property file="branch.properties" />
+
+       <property name="DESCRIPTION" value="Fireclipse Firebug Extension Development"/>
+	
+       <target name="create-fireclipse-xpi" depends="initialize"
+            description="Assemble the xpi">
+            <mkdir dir="${dist_dir}" />
+            <zip destfile="${dist_dir}/${XPI}">
+                 <zipfileset dir="${build_dir}" includes="install.rdf" />
+                 <zipfileset dir="." includes="license.txt" />
+                 <zipfileset dir="." includes="Readme.txt" />
+                 <zipfileset dir="." includes="build.xml" />
+                 <zipfileset dir="." includes="chrome.manifest" />
+                 <zipfileset dir="." includes="chrome/**/*"/>
+                 <zipfileset dir="." includes="components/**/*"/>
+                 <zipfileset dir="." includes="defaults/**/*"/>
+             </zip>
+         </target>
+
+    <target name="expand-templates" depends="version" description="Fill in version info">
+           <copy file="install.rdf.tpl.xml"
+                   tofile="${build_dir}/install.rdf"
+                   overwrite="true">
+                   <filterchain>
+                           <replacetokens>
+                                <token key="VERSION" value="${VERSION}"/>
+                                  <token key="AUTHORURL" value="http://www.almaden.ibm.com/u/bartonjj"/>
+                                 <token key="DESCRIPTION" value="${DESCRIPTION}"/>
+                               <token key="UPDATEPATH" value="${UPDATEPATH}"/>
+                           </replacetokens>
+                   </filterchain>
+           </copy>
+           <copy file="${build_dir}/install.rdf" tofile="install.rdf" overwrite="true"/>
+            
+    </target>
+
+    <target name="initialize" depends="clean, version, expand-templates" >
+
+    </target>
+
+    <target name="clean" depends="version">
+        <mkdir dir="${build_dir}" />
+    	<delete>
+    		<fileset dir="${build_dir}" includes="*.xpi" />
+    	</delete>
+    </target>
+	
+    <target name="version" description="Compute version number">
+        <tstamp/>
+
+        <property name="build_dir" location="./build" />
+        <property name="UPDATEPATH" value="${update.path}" />
+        <property name="XPI" value="fireclipse-${VERSION}${RELEASE}.xpi"/>
+    	<echo message="Using For Workspace Location: ${eclipse.workspace_loc}" /> 
+    	<property name="firefox-profile.dir" location="${eclipse.workspace_loc}/.metadata/.plugins/com.ibm.etools.webtools.debug/Firefox/Profiles/webtools" />
+    </target>
+	
+	<target name="expand-all-templates" depends="expand-templates">
+        <!-- expand the install.rdf and put it in the source tree, its not committed to svn -->
+        <ant dir="${firebug.dir}" antfile="build.xml" inheritall="false" target="expand-templates">
+             <property name="update.path" value="${update.path}" />
+             <property name="install.dir" value="${install.dir}" />
+        </ant>
+        <ant dir="${chromebug.dir}" antfile="build.xml" inheritall="false" target="expand-templates">
+             <property name="update.path" value="${update.path}" />
+             <property name="install.dir" value="${install.dir}" />
+        </ant>
+	</target>
+	
+    <target name="dev-setup" depends="create-extension-links, expand-all-templates">
+        
+    </target>
+
+	<target name="create-extension-links" depends="version">
+	        <echo message="Writing links from ${firefox-profile.dir} to ${basedir}"/>
+
+	        <mkdir dir="${firefox-profile.dir}/extensions" />
+
+	        <path id="fireclipse-dev">
+	            <pathelement location="${basedir}"/>
+	        </path>
+	        <pathconvert refid="fireclipse-dev" property="fireclipse-dev"/>
+	    	<echo message="${fireclipse-dev}" file="${firefox-profile.dir}/extensions/fireclipse@bartonjj.almaden.ibm.com" />
+
+			<path id="firebug-dev">
+	            <pathelement location="${firebug.dir}"/>
+	        </path>
+	        <pathconvert refid="firebug-dev" property="firebug-dev"/>
+	        <echo message="${firebug-dev}" file="${firefox-profile.dir}/extensions/firebug@software.joehewitt.com" />
+
+	        <path id="chromebug-dev">
+	            <pathelement location="${chromebug.dir}"/>
+	        </path>
+	        <pathconvert refid="chromebug-dev" property="chromebug-dev"/>
+	        <echo message="${chromebug-dev}" file="${firefox-profile.dir}/extensions/chromebug@johnjbarton.com" />
+			
+		</target>
+
+</project>

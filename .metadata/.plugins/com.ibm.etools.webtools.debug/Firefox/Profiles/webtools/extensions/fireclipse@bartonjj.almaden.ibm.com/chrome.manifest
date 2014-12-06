@@ -1,0 +1,7 @@
+# http://developer.mozilla.org/en/docs/Chrome_Registration
+content 	fireclipse 				chrome/content/
+skin 		fireclipse modern/1.0 	chrome/content/skin/
+locale 		fireclipse en-US 		chrome/locale/en-US/fireclipse/
+options     fireclipse              chrome/content/ 
+
+overlay 	chrome://firebug/content/firebugOverlay.xul chrome://fireclipse/content/firebugOverlay.xul 
